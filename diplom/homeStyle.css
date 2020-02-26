@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+}
+
+/* Header1 */
+.containerHeader .header1 {
+    height: 55px;
+    width: 100%;
+    background: #434343;
+    display: flex;
+    justify-content: space-between;
+}
+
+.langValut {
+    margin-left: 10%;
+    margin-top: 15px;
+}
+
+.langValut select {
+    background: none;
+    border: 0;
+    color: #ffffff;
+    font-size: 13px;
+    height: 30px;
+}
+
+.langValut #valuta {
+    border-right: 1px solid #ffffff;
+    
+}
+
+.header1 .logMenu {
+    margin-right: 10%;
+    margin-top: 15px;
+}
+
+.logMenu button {
+    background: none;
+    border: 0;
+    color: #ffffff;
+    padding-left: 10px;
+}
+
+.logMenu .login {
+    margin-right: 10px;
+}
+
+#poisk {
+    margin-right: 3%;
+}
+
+/*Header1 Menu*/
+
+.hamburgerMenu {
+    float: right;
+}
+
+#menu__toggle {
+    opacity: 0;
+}
+  
+.menu__btn {
+    display: flex; 
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+    margin-left: 90%;
+    margin-top: -8px;
+}
+  
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+.menu__btn > span::before {
+    content: '';
+    top: -8px;
+}
+.menu__btn > span::after {
+    content: '';
+    top: 8px;
+}
+#menu__box {
+    display: none;
+}
+
+
+.menu__itemBox {
+    
+    background: none;
+    
+}
+
+.menu__itemBox li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+/*Header2*/
+
+.header2 {
+    width: 100%;
+    height: 145px;
+    background: #363636;
+    margin: 0;
+}
+
+.header2 #phone {
+    margin-left: 15%;
+    margin-top: 70px;
+}
+.header2 #phoneNumber{
+    font-size: 20px;
+    color: white;
+    margin-left: 17%;
+    margin-top: -30px;
+}
+#corzina {
+    float: right;
+    margin-top: -50px;
+    margin-right: 17%;
+
+}
