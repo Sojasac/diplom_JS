@@ -1,5 +1,9 @@
 body {
     margin: 0;
+    background-image: url(../img/background30.png);
+}
+.wraper {
+    display: block;
 }
 
 /* Header1 */
@@ -30,24 +34,48 @@ body {
 }
 
 .header1 .logMenu {
-    margin-right: 10%;
+    margin-right: 25%;
     margin-top: 15px;
 }
 
-.logMenu button {
+.logMenu .registration {
+    position: absolute;
+    top: 20px;
+    right: 15%;
     background: none;
     border: 0;
     color: #ffffff;
     padding-left: 10px;
 }
 
-.logMenu .login {
-    margin-right: 10px;
+.logMenu .reg {
+    position: absolute;
+    top: 20px;
+    right: 19.5%;
 }
 
-#poisk {
-    margin-right: 3%;
+
+.logMenu .login {
+    position: absolute;
+    top: 20px;
+    right: 21%;
+    background: none;
+    border: 0;
+    color: #ffffff;
+    padding-left: 10px;
 }
+
+.logMenu .log {
+    position: absolute;
+    top: 20px;
+    right: 23.5%;
+
+}
+
+
+
+
+
 
 /*Header1 Menu*/
 
@@ -55,31 +83,30 @@ body {
     float: right;
 }
 
+
 #menu__toggle {
     opacity: 0;
 }
   
 .menu__btn {
-    display: flex; 
+    display: flex;
     align-items: center;
     position: fixed;
-    top: 20px;
-    left: 20px;
+    top: 23px;
+    right: 10%;
     width: 26px;
-    height: 26px;
+    height: 10px;
     cursor: pointer;
     z-index: 1;
-    margin-left: 90%;
-    margin-top: -8px;
 }
-  
+ 
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
     display: block;
     position: absolute;
     width: 100%;
-    height: 2px;
+    height: 3px;
     background-color: #fff;
 }
 .menu__btn > span::before {
@@ -90,20 +117,34 @@ body {
     content: '';
     top: 8px;
 }
-#menu__box {
-    display: none;
+  /* контейнер меню */
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    width: 150px;
+    height: 12%;
+    margin: 0;
+    padding: 40px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #393939;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
 }
-
-
-.menu__itemBox {
-    
-    background: none;
-    
-}
-
-.menu__itemBox li a {
+  /* элементы меню */
+.menu__item {
+    height: 100%;
+    display: block;
+    padding: 5px 12px;
     color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
     text-decoration: none;
+}
+.menu__item:hover {
+    background-color: #d58e32;
 }
 
 #menu__toggle:checked ~ .menu__btn > span {
@@ -116,6 +157,10 @@ body {
 #menu__toggle:checked ~ .menu__btn > span::after {
     top: 0;
     transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    right: 5%;
 }
 
 /*Header2*/
@@ -143,3 +188,211 @@ body {
     margin-right: 17%;
 
 }
+
+    /*Midle*/
+
+.middle {
+    width: 100%;
+    margin: 0;
+}
+
+.middle .meddleHead {
+    width: 100%;
+    height: 85px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: flex;
+    background: #fff;
+    
+}
+
+.middle .meddleHead #poisk {
+    margin-left: 15%;
+    margin-top: 20px;
+    width: 275px;
+    height: 45px;
+    border: 1px solid black; 
+    text-indent: 10px;
+}
+ 
+ .middle .meddleHead #poiskBtn {
+    margin-left: 0.5%;
+    margin-top: 20px;
+    width: 55px;
+    height: 45px;
+    border: 1px solid black; 
+    background: #f09608;
+}
+
+.menuLine  {
+	display: flex;
+	justify-content: space-around;
+	position: relative;
+	width: 40%;
+    margin-left: 10%;
+
+}
+.menuLine li {
+	display: inline;
+    height: 100%;
+    
+
+}
+.menuLine li a {
+	color: black;
+	font-size: 18px;
+	font-family: 'Raleway', sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+    height: 85px;
+	position: relative;
+
+}
+.menuLine li:hover a {
+    color: #ffffff;
+       
+}
+.menuLine li:hover {
+	border-top: 3px solid black;
+    position: relative;
+    top: -3px;
+    background: #d58e32;
+    height: 100%;
+}
+
+    /*Карусель*/
+   /*first*/
+/*#firstCarousel{
+    width: 30%;
+    float: left;
+    margin-left: 1%;
+
+} 
+
+.items .opisCont #Opis1  {
+    color: orange;
+}*/
+#secondCarousel{
+    width: 80%;
+    float: right;
+    margin: auto 10%;
+
+}
+.items .opisCont {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(105, 105, 105, 0.8);
+
+}
+
+.items .opisCont p {
+    font-size: 25px;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.items .contBtn {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(105, 105, 105, 0.8);
+    height: 10%;
+    
+
+}
+
+.items .contBtn #zakaz {
+    margin-top: 10px;
+    background: none;
+    font-size: 15px;
+    border: 2px solid #d58e32;
+    color: white;
+    padding: 5px;
+}
+
+/*timer*/
+/*.timer{
+    font-size: 0;
+    text-align: center;
+}
+.timer_section{
+    display: inline-block;
+    vertical-align: top;
+}
+.timer_section > div{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 50px;
+    background: #4dadf7;
+    color: #ffffff;
+    line-height: 70px;
+    width: 55px;
+    margin: 0 1px;
+    border-radius: 2px;
+}
+.timer_section > div.timer_section_desc{
+    display: block;
+    background: none;
+    color: inherit;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 30px;
+    width: auto;
+    margin: 0;
+}
+.timer_delimetr{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 50px;
+    line-height: 70px;
+    margin: 0 5px;
+}
+@media (max-width: 767px){
+    .timer_section > div{
+        font-size: 30px;
+        width: 30px;
+        line-height: 40px;
+    }
+    .timer_delimetr{
+        line-height: 40px;
+        font-size: 30px;
+    }
+    .timer_section > div.timer_section_desc{
+        font-size: 14px;
+        line-height: 26px;
+    }
+}*/
+
+.About {
+    width: 80%;
+    margin: 2% 10% auto 10%;
+    background: #cccccc;
+    position: absolute;
+    top: 1040px;
+}
+
+.About h1 {
+    text-align: center;
+    color: white;
+    font-style: italic;
+    font-size: 40px;
+}
+
+.About li {
+    color: white;
+    font-size: 20px;
+
+}
+
+.About li span {
+    font-size: 30px;
+}
+
+.About ul hr {
+    width: 90%;
+    height: 1px;
+    background: #ff7e29;
+} 
