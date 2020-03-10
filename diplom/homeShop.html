@@ -13,173 +13,266 @@
     <div class="wraper">
         <div class="containerHeader">
             <div class="header1">
-                <div class="langValut">
-                    <select size="1" name="valuta" id="valuta">
-                        <option value="USD">USD</option>
-                        <option value="Рубли">Рубли</option>
-                    </select>
-                    <select size="1" name="lang" id="lang">
-                        <option value="English">English</option>
-                        <option value="Russian">Russian</option>
-                    </select>
-                </div>
-                <div class="logMenu">
-                    <img id="imgHead" class="log" src="../img/login.png" alt="#"><button class="login">Login</button>
-                    <img id="imgHead" class="reg" src="../img/reg.png" alt="#"><button class="registration">Registration</button>
-                    <div class="hamburger-menu">
-                        <input id="menu__toggle" type="checkbox" />
-                        <label class="menu__btn" for="menu__toggle">
-                          <span></span>
-                        </label>
-                        <ul class="menu__box">
-                          <li><a class="menu__item" href="#">Главная</a></li>
-                          <li><a class="menu__item" href="#">Проекты</a></li>
-                          <li><a class="menu__item" href="#">Команда</a></li>
-                          <li><a class="menu__item" href="#">Блог</a></li>
-                          <li><a class="menu__item" href="#">Контакты</a></li>
-                        </ul>
-                      </div>
-                </div>
-            </div> 
-            <div class="header2">
-                <img id="phone" src="../img/phone.png" alt="#">
-                <h1 id="phoneNumber">+ 375 (33) 328 87 30</h1>
-                <img id="corzina" src="../img/corzina.png" alt="#">
-
-            </div>
-        </div>
-        <div id="middle" class="middle">
-            <div class="meddleHead" id="meddleHead">
-                <input  id="poisk" type="text" placeholder="Search products..."><button id="poiskBtn">Найти</button> 
-                <ul class="menuLine">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Clients</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </div>    
-            <!--<div class="owl-carousel owl-theme" id="firstCarousel">
-                <div class="items"> 
-                     <div class="timer" data-finish="<?=(strtotime("+1 day") * 1000)?>">
-                        <div class="timer_section">
-                            <div class="days_1">0</div>
-                            <div class="days_2">0</div>
-                            <div class="timer_section_desc">дней</div>
+                    <div class="langValut">
+                        <select size="1" name="valuta" id="valuta">
+                            <option value="USD">USD</option>
+                            <option value="Рубли">Рубли</option>
+                        </select>
+                        <select size="1" name="lang" id="lang">
+                            <option value="English">English</option>
+                            <option value="Russian">Russian</option>
+                        </select>
+                    </div>
+                    <div class="logMenu">
+                        <img id="imgHead" class="log" src="../img/login.png" alt="#"><button class="login" id="login">Login</button>
+                        <img id="imgHead" class="reg" src="../img/reg.png" alt="#"><button class="registration" id="registration">Registration</button>
+                        <div class="hamburger-menu">
+                            <input id="menu__toggle" type="checkbox" />
+                            <label class="menu__btn" for="menu__toggle">
+                            <span></span>
+                            </label>
+                            <ul class="menu__box">
+                            <li><a class="menu__item" href="#">Главная</a></li>
+                            <li><a class="menu__item" href="#">Проекты</a></li>
+                            <li><a class="menu__item" href="#">Команда</a></li>
+                            <li><a class="menu__item" href="#">Блог</a></li>
+                            <li><a class="menu__item" href="#">Контакты</a></li>
+                            </ul>
                         </div>
-                        <div class="timer_delimetr">:</div>
-                        <div class="timer_section">
-                            <div class="hours_1">0</div>
-                            <div class="hours_2">0</div>
-                            <div class="timer_section_desc">часов</div>
-                        </div>
-                        <div class="timer_delimetr">:</div>
-                        <div class="timer_section">
-                            <div class="minutes_1">0</div>
-                            <div class="minutes_2">0</div>
-                            <div class="timer_section_desc">минут</div>
-                        </div>
-                        <div class="timer_delimetr">:</div>
-                        <div class="timer_section">
-                            <div class="seconds_1">0</div>
-                            <div class="seconds_2">0</div>
-                            <div class="timer_section_desc">секунд</div>
-                        </div>
-                    </div> 
-                    <div class="opisCont"><p id="Opis1">Sale 23%</p></div>
-                     <img class="imgOsnov" src="../img/img6.jpg" height="600px" alt="#">
-                     <div class="contBtn"><button id="zakaz">Заказать</button></div>
-                </div>
-                <div class="items"> 
-                     <div class="timer" data-finish="<?=(strtotime("+1 day") * 1000)?>">
-                        <div class="timer_section">
-                            <div class="days_1">0</div>
-                            <div class="days_2">0</div>
-                            <div class="timer_section_desc">дней</div>
-                        </div>
-                        <div class="timer_delimetr">:</div>
-                        <div class="timer_section">
-                            <div class="hours_1">0</div>
-                            <div class="hours_2">0</div>
-                            <div class="timer_section_desc">часов</div>
-                        </div>
-                        <div class="timer_delimetr">:</div>
-                        <div class="timer_section">
-                            <div class="minutes_1">0</div>
-                            <div class="minutes_2">0</div>
-                            <div class="timer_section_desc">минут</div>
-                        </div>
-                        <div class="timer_delimetr">:</div>
-                        <div class="timer_section">
-                            <div class="seconds_1">0</div>
-                            <div class="seconds_2">0</div>
-                            <div class="timer_section_desc">секунд</div>
-                        </div>
-                    </div> 
-                    <div class="opisCont"><p id="Opis1">Sale 23%</p></div>
-                    <img class="imgOsnov" src="../img/img7.jpg" height="600px" alt="#"> 
-                    <div class="contBtn"><button id="zakaz">Заказать</button></div>   
+                    </div>
                 </div> 
+                <div class="header2">
+                    <img id="phone" src="../img/phone.png" alt="#">
+                    <h1 id="phoneNumber">+ 375 (33) 328 87 30</h1>
+                    <img id="corzina" src="../img/corzina.png" alt="#">
 
-            </div> --> 
-            <div class="owl-carousel owl-theme" id="secondCarousel">
-                <div class="items"> 
-                    <div class="opisCont"><p id="Opis">Античное направление</p></div>
-                     <img class="imgOsnov" src="../img/img1.jpg" height="800px" alt="#">
-                     <div class="contBtn"><button id="zakaz">Заказать</button></div>
                 </div>
-                <div class="items"> 
-                    <div class="opisCont"><p id="Opis">Классическое направление</p></div>
-                    <img class="imgOsnov" src="../img/img2.jpg" height="800px" alt="#"> 
-                    <div class="contBtn"><button id="zakaz">Заказать</button></div>   
+        </div>
+            <div id="middle" class="middle">
+                <div class="meddleHead" id="meddleHead">
+                    <input  id="poisk" type="text" placeholder="Search products..."><button id="poiskBtn">Найти</button> 
+                    <ul class="menuLine">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Clients</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
                 </div>
-                <div class="items">
-                    <div class="opisCont"><p id="Opis">Этническое направление</p></div>
-                    <img class="imgOsnov" src="../img/img3.jpg" height="800px" alt="#">
-                    <div class="contBtn"><button id="zakaz">Заказать</button></div>
+            </div>    
+                <!--<div class="owl-carousel owl-theme" id="firstCarousel">
+                    <div class="items"> 
+                        <div class="timer" data-finish="<?=(strtotime("+1 day") * 1000)?>">
+                            <div class="timer_section">
+                                <div class="days_1">0</div>
+                                <div class="days_2">0</div>
+                                <div class="timer_section_desc">дней</div>
+                            </div>
+                            <div class="timer_delimetr">:</div>
+                            <div class="timer_section">
+                                <div class="hours_1">0</div>
+                                <div class="hours_2">0</div>
+                                <div class="timer_section_desc">часов</div>
+                            </div>
+                            <div class="timer_delimetr">:</div>
+                            <div class="timer_section">
+                                <div class="minutes_1">0</div>
+                                <div class="minutes_2">0</div>
+                                <div class="timer_section_desc">минут</div>
+                            </div>
+                            <div class="timer_delimetr">:</div>
+                            <div class="timer_section">
+                                <div class="seconds_1">0</div>
+                                <div class="seconds_2">0</div>
+                                <div class="timer_section_desc">секунд</div>
+                            </div>
+                        </div> 
+                        <div class="opisCont"><p id="Opis1">Sale 23%</p></div>
+                        <img class="imgOsnov" src="../img/img6.jpg" height="600px" alt="#">
+                        <div class="contBtn"><button id="zakaz">Заказать</button></div>
+                    </div>
+                    <div class="items"> 
+                        <div class="timer" data-finish="<?=(strtotime("+1 day") * 1000)?>">
+                            <div class="timer_section">
+                                <div class="days_1">0</div>
+                                <div class="days_2">0</div>
+                                <div class="timer_section_desc">дней</div>
+                            </div>
+                            <div class="timer_delimetr">:</div>
+                            <div class="timer_section">
+                                <div class="hours_1">0</div>
+                                <div class="hours_2">0</div>
+                                <div class="timer_section_desc">часов</div>
+                            </div>
+                            <div class="timer_delimetr">:</div>
+                            <div class="timer_section">
+                                <div class="minutes_1">0</div>
+                                <div class="minutes_2">0</div>
+                                <div class="timer_section_desc">минут</div>
+                            </div>
+                            <div class="timer_delimetr">:</div>
+                            <div class="timer_section">
+                                <div class="seconds_1">0</div>
+                                <div class="seconds_2">0</div>
+                                <div class="timer_section_desc">секунд</div>
+                            </div>
+                        </div> 
+                        <div class="opisCont"><p id="Opis1">Sale 23%</p></div>
+                        <img class="imgOsnov" src="../img/img7.jpg" height="600px" alt="#"> 
+                        <div class="contBtn"><button id="zakaz">Заказать</button></div>   
+                    </div> 
+
+                </div> --> 
+                <div class="owl-carousel owl-theme" id="secondCarousel">
+                    <div class="items"> 
+                        <div class="opisCont"><p id="Opis">Античное направление</p></div>
+                        <img class="imgOsnov" src="../img/img1.jpg" height="800px" alt="#">
+                        <div class="contBtn"><button id="zakaz">Заказать</button></div>
+                    </div>
+                    <div class="items"> 
+                        <div class="opisCont"><p id="Opis">Классическое направление</p></div>
+                        <img class="imgOsnov" src="../img/img2.jpg" height="800px" alt="#"> 
+                        <div class="contBtn"><button id="zakaz">Заказать</button></div>   
+                    </div>
+                    <div class="items">
+                        <div class="opisCont"><p id="Opis">Этническое направление</p></div>
+                        <img class="imgOsnov" src="../img/img3.jpg" height="800px" alt="#">
+                        <div class="contBtn"><button id="zakaz">Заказать</button></div>
+                    </div>
+                    <div class="items">
+                        <div class="opisCont"><p id="Opis">Современное направление</p></div>
+                        <img class="imgOsnov" src="../img/img4.jpg" height="800px" alt="#">
+                        <div class="contBtn"><button id="zakaz">Заказать</button></div>
+                    </div>
+                    <div class="items">
+                        <div class="opisCont"><p id="Opis">Смешанная стилистика</p></div>
+                        <img class="imgOsnov" src="../img/img5.jpg" height="800px" alt="#">
+                        <div class="contBtn"><button id="zakaz">Заказать</button></div>
+                    </div>
                 </div>
-                <div class="items">
-                    <div class="opisCont"><p id="Opis">Современное направление</p></div>
-                    <img class="imgOsnov" src="../img/img4.jpg" height="800px" alt="#">
-                    <div class="contBtn"><button id="zakaz">Заказать</button></div>
-                </div>
-                <div class="items">
-                    <div class="opisCont"><p id="Opis">Смешанная стилистика</p></div>
-                    <img class="imgOsnov" src="../img/img5.jpg" height="800px" alt="#">
-                    <div class="contBtn"><button id="zakaz">Заказать</button></div>
-                </div>
-            </div>
-            
+                
 
         <div class="About">
-            <h1 class="wow zoomIn">Наши главные принципы</h1>
-            <ul class="wow bounceInLeft">
-                <li> <span> Высокие стандарты качества. </span>  
-                    <p> Мы следуем правилу: если ты что-то делаешь, ты должен это делать идеально! Мы требовательны к себе и к своему делу.</p>
-                </li>
-                <hr/>
-                <li> <span> Наши клиенты – наши друзья. </span>  
-                    <p> Один из приоритетов в нашей работе – полное взаимопонимание заказчика и дизайнера.     Результатом такого подхода становится наилучший результат.     Мы гарантируем, что ни одно Ваше пожелание не останется без внимания в процессе создания ультрамодного, эксклюзивного дизайн-проекта интерьера.</p>
-                </li>
-                <hr>
-                <li> <span> Индивидуальный подход к каждому клиенту и его потребностям. </span>  
-                    <p> Вы знаете цену своему времени? Отлично! Мы сможем Вам помочь.     Услуга «ремонт под ключ» востребована на рынке. Мы собрали команду, проверенную временем.     Опытные дизайнеры, архитекторы, инженеры, строители, комплектовщики работают как единый организм.     Финальный этап работы «под ключ» - передача ключей от дома или квартиры, которая укомплектована всем, вплоть до тапочек.     При этом затраты Вашего времени и средств сводятся к минимуму.</p>
-                </li>
-                <hr>
-                <li> <span> Мы с Вами до конца. </span>  
-                    <p> Даже в случае отсутствия авторского надзора или работы «под ключ», после сдачи проекта мы остаемся на связи и всегда готовы ответить на Ваши вопросы, помочь советом в процессе ремонта.</p>
-                </li>
-            </ul>
+                <h1 class="wow zoomIn">Наши главные принципы</h1>
+                <ul class="wow bounceInLeft">
+                    <li> <span> Высокие стандарты качества. </span>  
+                        <p> Мы следуем правилу: если ты что-то делаешь, ты должен это делать идеально! Мы требовательны к себе и к своему делу.</p>
+                    </li>
+                    <hr/>
+                    <li> <span> Наши клиенты – наши друзья. </span>  
+                        <p> Один из приоритетов в нашей работе – полное взаимопонимание заказчика и дизайнера.     Результатом такого подхода становится наилучший результат.     Мы гарантируем, что ни одно Ваше пожелание не останется без внимания в процессе создания ультрамодного, эксклюзивного дизайн-проекта интерьера.</p>
+                    </li>
+                    <hr>
+                    <li> <span> Индивидуальный подход к каждому клиенту и его потребностям. </span>  
+                        <p> Вы знаете цену своему времени? Отлично! Мы сможем Вам помочь.     Услуга «ремонт под ключ» востребована на рынке. Мы собрали команду, проверенную временем.     Опытные дизайнеры, архитекторы, инженеры, строители, комплектовщики работают как единый организм.     Финальный этап работы «под ключ» - передача ключей от дома или квартиры, которая укомплектована всем, вплоть до тапочек.     При этом затраты Вашего времени и средств сводятся к минимуму.</p>
+                    </li>
+                    <hr>
+                    <li> <span> Мы с Вами до конца. </span>  
+                        <p> Даже в случае отсутствия авторского надзора или работы «под ключ», после сдачи проекта мы остаемся на связи и всегда готовы ответить на Ваши вопросы, помочь советом в процессе ремонта.</p>
+                    </li>
+                </ul>
 
 
         </div>
 
 
 
+        <div class="team">
+            <h1 class="wow bounceInDown">Наша команда профессионалов</h1>
+                <div>
+                    <div class="wow bounceInDown" id="circle">
+                        <img src="../img/face1.jpg" alt="">
+                    </div>
+                    <h2 class="wow flipInX">Наш строитель</h2>
+                </div>
+                <div>
+                    <div class="wow bounceInDown" id="circle">
+                        <img src="../img/face2.jpg" alt="">
+                    </div>
+                    <h2 class="wow flipInX">Наш инженер</h2>
+                </div>  
+                <div>
+                    <div class="wow bounceInDown" id="circle">
+                        <img src="../img/face3.jpg" alt="">
+                    </div>
+                    <h2 class="wow flipInX">Наш дизайнер</h2>
+                </div>      
+        </div>
+
+        <div class="preFooter">
+            <p>Контактные телефоны для консультации либо заказа дизайн-проекта:
+                <br>
+ 
+                Велком:
+                +375 (29) 333-99-38
+                 
+                МТС:
+                +375 (33) 689-99-38
+                <br>
+                Контактный телефон для партнеров:
+                <br>
+                 
+                Городской:
+                +375 (17) 236-38-98
+            </p>
+        </div>
+        
+        <footer class="footer">
+            <div class="leftFooter"> 
+                <p> © 2016-2020, dis.by
+                    Дизайн-студия интерьера Dis в Минске - дизайн квартир, домов в любом стиле
+                    Реквизиты: ООО «Диз», УНП 1111111, IBAN BY11BY1111111111111.
+                    Отделение № 111111 ЗАО «Банк», BIC BY2X, индекс 111111,
+                    г.Минск, Возможный тракт 1/1
+                    Юридический адрес: 220020, Республика Беларусь, Минск,
+                    пр-т Неизвестный, д.1, офис 1111
+                    Разработка и продвижение сайта - SPMedia
+                </p>
+            </div>
+
+            <div class="rightFooter">
+                <ul>
+                    <li><button class="social"><a href="https://www.facebook.com/">Facebook</a></button> <button class="social"><a href="https://www.vk.com">Вконтакте</a></button> <button class="social"><a href="https://www.instagram.com/?hl=ru">Instagram</button></a></li>
+                    <li>+375 (17) 111-11-11</li>
+                    <li>+375 (29) 111-11-11</li>
+                    <li>+375 (33) 111-11-11</li>
+                    <li>e-Mail: dis@g1mail.com</li>
+                </ul>    
+                
+            </div>
+        </footer>
+
+
+        <div class="modal1">
+            <div class="loginContent">
+                <span class="krest1" id="krest1">&times;</span>
+                <h1>Вход</h1>
+                <ul class="inputDecoration">
+                    <li class="itemInput"><input type="text" placeholder="email"></li>
+                    <li class="itemInput"><input type="text" placeholder="password"></li>
+                    <li class="itemInput"><button class="sign" id="signUp">Sign in</button></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="modal2">
+            <div class="loginContent">
+                <span class="krest2" id="krest2">&times;</span>
+                <h1>Регистрация</h1>
+                <ul class="inputDecoration">
+                    <li class="itemInput"><h2>Имя</h2><input type="text" placeholder="Имя"></li>
+                    <li class="itemInput"><h2>Фамилия</h2><input type="text" placeholder="Фамилия"></li>
+                    <li class="itemInput"><h2>Дата рождения</h2><input type="date" placeholder="Дата родения"></li>
+                    <li class="itemInput"><h2>Эл. адрес</h2><input type="text" placeholder="email"></li>
+                    <li class="itemInput"><h2>Пароль</h2><input type="text" placeholder="password"></li>
+                    <li class="itemInput"><button class="sign" id="signUp">Sign Up</button></li>
+                </ul>
+            </div>
+        </div>
 
 
 

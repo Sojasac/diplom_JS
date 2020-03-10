@@ -1,44 +1,9 @@
-/*var menu = document.getElementsById('menu__btn');
-
-menu.onclick = function() { 
-    menu__box.style.visibility = 'block'
-
-    
-}*/
-
-/*var slideIndex = 1;
-showSlides(slideIndex);
-function plusSlides(n) {
-    showSlides(slideIndex += n ); 
-}
-
-function currentSlide(n) {
-    showSlides(slideIndex = n );
-}
-
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-
-    if(n > slides.length) {
-        slideIndex = 1
-    }
-    if(n < 1){
-        slideIndex = slides.length 
-    }
-
-    for (i=0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-        
-    }
-    for (i = 0; i < dots.length; i++){
-        dots[i].className = dots[i].className.replace("active", "");
-    }
-
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className+= "active";
-}*/
+var krestBtn1 = document.getElementById('krest1');
+var krestBtn2 = document.getElementById('krest2');
+var loginModal = document.getElementById('login');
+var registrationModal = document.getElementById('registration');
+var elems=document.getElementsByClassName('modal1');
+var elems2=document.getElementsByClassName('modal2')
 
 $(document).ready(function(){
     $("#secondCarousel").owlCarousel({
@@ -125,3 +90,29 @@ $(document).ready(function() {
     var time = $(".timer").attr("data-finish");
     timer(time);
 });
+
+
+
+
+
+krestBtn1.addEventListener('click', function(){
+    for(var i=0; i<elems.length; i++)elems[i].style.display='none';
+});
+
+
+
+krestBtn2.addEventListener('click', function(){
+    for(var i=0; i<elems2.length; i++)elems2[i].style.display='none';
+});
+
+
+loginModal.addEventListener('click', function(){
+    for(var i=0; i<elems.length; i++)elems[i].style.display='block';
+});
+
+registrationModal.addEventListener('click', function(){
+    for(var i=0; i<elems2.length; i++)elems2[i].style.display='block';
+});
+
+
+
